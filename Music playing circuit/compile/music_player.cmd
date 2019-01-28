@@ -1,0 +1,1 @@
+-w -s "c:\Users\Administrator\Desktop\act\music\library.cfg"  -j "c:\Users\Administrator\Desktop\act\music\music_player\projlib.cfg"  -d "c:\Users\Administrator\Desktop\act\music\music_player\compile"   -work music_player  -O3 -e 100 -2002 "c:\Users\Administrator\Desktop\act\music\music_player\src\pre_num.vhd"

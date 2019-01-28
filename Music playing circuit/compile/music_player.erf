@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: c:\Users\Administrator\Desktop\act\music\music_player\src\pre_num.vhd" 
+MESSAGE "Compile Entity "pre_num"" 
+MESSAGE "Compile Architecture "skfp" of Entity "pre_num"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  5.0 [s]" 

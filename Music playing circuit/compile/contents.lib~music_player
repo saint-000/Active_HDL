@@ -1,0 +1,20 @@
+245
+~E 1 "./../src/clk_div.vhd" 5 clk_div
+~A 1 "./../src/clk_div.vhd" 16 rtl
+~E 1 "./../src/rtl.vhd" 5 clk_divx
+~A 1 "./../src/rtl.vhd" 16 rtl
+~E 1 "./../src/music.vhd" 6 melody
+~A 1 "./../src/music.vhd" 16 yuequ
+~E 1 "./../src/music.vhd" 6 music
+~A 1 "./../src/music.vhd" 18 yuequ
+~E 1 "./../src/top.vhd" 4 music_total
+~A 1 "./../src/top.vhd" 16 total
+~E 1 "./../src/num_control.vhd" 5 num_control
+~A 1 "./../src/num_control.vhd" 14 skfp
+~A 1 "./../src/num_control.vhd" 16 yang
+~E 1 "./../src/pre_num.vhd" 4 pre_num
+~A 1 "./../src/pre_num.vhd" 14 skfp
+~E 1 "./../src/dig_fre.vhd" 4 shukong
+~A 1 "./../src/dig_fre.vhd" 14 skfp
+~E 1 "./../src/fre_2.vhd" 5 ysq
+~A 1 "./../src/fre_2.vhd" 16 yang
