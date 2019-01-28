@@ -1,0 +1,59 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=music_player
+
+[Library]
+music_player=.\music_player\music_player.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\Lenovo\Desktop\music
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+music_player=.
+Active_lib=
+
+[Files]
+/pre_num.vhd=-1
+/num_control.vhd=-1
+/music.vhd=-1
+/clk_div.vhd=-1
+/top.vhd=-1
+
+[Files.Data]
+.\src\pre_num.vhd=VHDL Source Code
+.\src\num_control.vhd=VHDL Source Code
+.\src\music.vhd=VHDL Source Code
+.\src\clk_div.vhd=VHDL Source Code
+.\src\top.vhd=VHDL Source Code
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=clk_div|rtl|0 music_total|total|0 num_control|yang|0 pre_num|skfp|0        
+ShowHide=ShowTopLevel
+Selected=

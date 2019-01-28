@@ -1,0 +1,14 @@
+[Version]
+Version=9.2
+[Designs]
+music_player=music_player.adf
+[Settings]
+Active=music_player
+[Expand]
+music_player=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
