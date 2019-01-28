@@ -1,0 +1,12 @@
+[Version]
+Version=9.2
+[Designs]
+study1=.\study1\study1.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+study1=1
