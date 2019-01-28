@@ -15,13 +15,23 @@ VHDL结合FPGA可以方便地，可重复利用地实现各种设计，本文主
 3 设计原理
 
 3.1各模块介绍
-控制模块包括了开和关两个按键，start端定义管脚约束为P113-S18；reset端定义管脚约束为P111-S17
+控制模块包括了开和关两个按键，start端定义管脚约束为P113-S18；
+
+reset端定义管脚约束为P111-S17
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/a.PNG)
 
 
-分频模块主要是给需要的模块提供特定频率的时钟信号；在实验中将时钟分为两个频率	bclk1<=count(24);--用于计时
+分频模块主要是给需要的模块提供特定频率的时钟信号；
+
+在实验中将时钟分为两个频率	
+
+bclk1<=count(24);--用于计时
+
 bclk2<=count(14);--用于扫描数码管
+
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/b.PNG)
+
+
 模块代码如下：
 <pre>
 library IEEE;
@@ -342,6 +352,7 @@ end rtl;
 采用同步电路，总线结构，主要功能集中在模块内部，模块较为独立，模块间连接简单，易于扩展，本次设计采用此方案
 
 3.3时钟系统整体介绍
+
 由分频器从33.8688MHZ晶振中得到1HZ信号给计数器提供标准时钟，用于计时，针对时，分，秒分别设计一组6位和十位计数器对应具体的十位和个位，记满进位。在通过数据选择器对扫描数码管位选，此处用的是bclk2，即分频器分出的另一时钟信号，用来扫描数码管，显示是要考虑段选显示，用四八译码器实现。最后输出至SG段选和COM位选。
 
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/g.PNG)
@@ -453,18 +464,27 @@ end rtl;
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/h.PNG)
 
 3.6代表性波形仿真
+
 正常计数时，当秒计数器计数到59时，再来一个时钟脉冲，则秒计数器清零，而进位则作为分计数器的计数脉冲，使时计数器加一。（00:00:59=>00:01:00）
  ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/i.PNG) 
+
 当分计数器计数到59时，再来一个时钟脉冲，则分计数器清零，而进位则作为时计数器的计数脉冲，使时计数器加一。（00:59:59=>01:00:00）
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/j.PNG)
+
 3.7实验截图：
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/k.PNG)
+
 4 总结
+
 4.1实验改进：
 在实验中，发现忽略了时计数模块是二十四进制的，所以对实验的改进如下：
+
 时钟时计数子模块：
+
 时计数子模块是由一个24进制计数器组成，正常计数时，当时计数器计数到23时，再来一个脉冲，则时计数器清零，重新开始新一轮的计数。
+
 时的计时电路可以用如下方式实现：
+
 代码如下：
 <pre>
 library IEEE;
