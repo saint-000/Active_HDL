@@ -1,0 +1,8 @@
+[Version]
+Version=9.2
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
