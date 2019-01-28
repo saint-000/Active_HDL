@@ -71,7 +71,9 @@ end behav;
 </pre>
 
 计时模块包括了秒、分、时计数模块，通过不同数位的计数器实现，并提供给显示模块显示输出；
+
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/c.PNG)
+
 代码如下：
 
 U4:秒的个位
