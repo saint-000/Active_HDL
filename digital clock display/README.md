@@ -311,7 +311,9 @@ begin
 
 end rtl;
 </pre>
+
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/e.PNG)
+
 段选代码如下：
 <pre>
 library IEEE;
@@ -350,7 +352,9 @@ end rtl;
 </pre>
 
 3.2系统方案
+
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/f.PNG)
+
 采用同步电路，总线结构，主要功能集中在模块内部，模块较为独立，模块间连接简单，易于扩展，本次设计采用此方案
 
 3.3时钟系统整体介绍
@@ -358,6 +362,7 @@ end rtl;
 由分频器从33.8688MHZ晶振中得到1HZ信号给计数器提供标准时钟，用于计时，针对时，分，秒分别设计一组6位和十位计数器对应具体的十位和个位，记满进位。在通过数据选择器对扫描数码管位选，此处用的是bclk2，即分频器分出的另一时钟信号，用来扫描数码管，显示是要考虑段选显示，用四八译码器实现。最后输出至SG段选和COM位选。
 
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/g.PNG)
+
 3.4顶层代码：
 <pre>
 library IEEE;
@@ -462,18 +467,23 @@ begin
 	
 end rtl;
 </pre>
+
 3.5	管脚约束
+
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/h.PNG)
 
 3.6代表性波形仿真
 
 正常计数时，当秒计数器计数到59时，再来一个时钟脉冲，则秒计数器清零，而进位则作为分计数器的计数脉冲，使时计数器加一。（00:00:59=>00:01:00）
- ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/i.PNG) 
+
+![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/i.PNG) 
 
 当分计数器计数到59时，再来一个时钟脉冲，则分计数器清零，而进位则作为时计数器的计数脉冲，使时计数器加一。（00:59:59=>01:00:00）
+
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/j.PNG)
 
 3.7实验截图：
+
 ![image](https://github.com/saint-000/Active_HDL/blob/master/digital%20clock%20display/image/k.PNG)
 
 4 总结
