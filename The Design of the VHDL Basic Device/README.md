@@ -60,4 +60,4 @@ FPGA集成开发软件工具ISE的应用过程部分截图：
 
 ![image](https://github.com/saint-000/Active_HDL/blob/master/The%20Design%20of%20the%20VHDL%20Basic%20Device/image/26.png)
 
-![image](https://github.com/saint-000/Active_HDL/blob/master/The%20Design%20of%20the%20VHDL%20Basic%20Device/image/11.png)
+
